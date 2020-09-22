@@ -271,6 +271,50 @@ Navigate to IAM and create a group called HealthcareDeveloper and attach the pol
 
 Navigate to the Service Catalog console, create a new portfolio. Go into the portfolio and click on upload new product.
 
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/upload.png)
+
+Download this template: https://s3.amazonaws.com/awsiammedia/public/sample/hippa-compliance/aws-service-catalog/code-deployments/Healthcare-DevSecOps-1.cform. Name the product, choose use a template file and upload the downloaded template. Click review and create.
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/health1.png)
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/health2.png)
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/health3.png)
+
+Add the healthcare developer group to the profile.
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/health4.1.png)
+
+Navigate to IAM and create a policy with the following code: https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/template1.jscsrc. Add any additional services needed, for example add the following to add RDS:"rds:*"
+
+Create a role and attach the policy.
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/policies.png)
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/polices2.png)
+
+To run an AWS CodeCommit repository open the CLI on one’s workstation. Run the following command to create a new CodeCommit repository "aws codecommit create-repository --repository-name DevSecOpsExampleRepo --repository-description "My DevSecOps example repository""
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/devsecopsre.png)
+
+Navigate to AWS Code commit console and go into the newly created repository, click create file. Enter the following HTML code: https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/template2.mdoc
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/repoi.png)
+
+Name the file DevSecOpsExampleRepo/index.html. Enter the author name and email address, click commit changes. 
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/commit.png)
+
+Sign into AWS as the Service Catalog user, make sure the user has the correct permissions. Navigate to Service Catalog and click on the Healthcare Web server product, click on launch product. Create a name, choose a version and select next.
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/server.png)
+
+On the Parameters page, create the WebDirectory, choose Keyname, PHI is yes, Create a FriendlyName, Environment is Test. CodeCommitRepo,enter the URL of the AWS CodeCommit Repository, enter the instance owner email, and choose an Instance type and click next and then launch.
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/params3.png)
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/server2.png)
+
 
 
 
