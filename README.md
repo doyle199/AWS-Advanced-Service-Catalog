@@ -5,3 +5,11 @@ Make sure the admin users have the correct permissions for AWS Service catalog. 
 
 ![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/create_portfolio.png)
 
+Enter a portfolio name, description, and owner and click create.
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/portfolio1.png)
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/portfolio_success.png)
+
+To create a cloud development environment that runs on Amazon Linux, open the portfolio just created. Click on upload new product.
+
