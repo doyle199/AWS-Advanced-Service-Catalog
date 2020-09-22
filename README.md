@@ -233,8 +233,35 @@ The stack sent an approval notification to the email. Click the link to approve.
 
 It will say successfully approved in the web browser. Then the stack resumes creation because the Lambda function sends a confirmation for WaitHandle to continue.
 
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/Wait_complete.png)
 
+Next, To use AWS Service Catalog for Code Deployments, enable CloudTrail and AWS Config, navigate to the AWS CloudTrail console, click on create a trail. Enter a trail name, check the box for enable for all accounts, create and AWS KMS alias name, enable CloudWatch Logs, make a role name, click next.
 
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/trail_att_1.png)
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/Trail_att_2.png)
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/Trail_att_3.png)
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/Trail_att_4.png)
+
+Choose an event type, click next, click create trail.
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/event1.png)
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/event2.png)
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/event3.png)
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/event4.png)
+
+Navigate to AWS Config console, click get started. On step 1: settings, leave the defaults and click next.
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/set1.png)
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/set2.png)
+
+Choose any rules one wants and click next then click create.
 
 
 
