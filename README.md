@@ -111,5 +111,49 @@ Back in the portfolio, select the groups, roles, and users tab and click add gro
 
 In the groups tab, check the box for the Endusers group and click add access.
 
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/add_access!.png)
 
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/add_access_2.png)
+
+To verify that the user can access the end user console log into AWS as the user and perform the following steps. Navigate to the service catalog console and select Linux Desktop product.
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/SC_!.png)
+
+Click Launch Product.
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/launch_product_1.png)
+
+Enter Linux-Desktop as the name, select the v1.0 and click next. 
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/version_1.png)
+
+Choose a server size, keypair, CIDR range and click next.
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/params.png)
+
+Click next, next, and then launch.
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/Launch_3.png)
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/internal.png)
+
+Use AWS Service Catalog to build a custom catalog of AMIs from AWS Marketplace. Revoke AWS Marketplace permissions and grant AWS Service Catalog permissions to one’s catalog users. As the Admin, navigate to service catalog, click on polices in the left menu and click create policy.
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/create_policy_3.png)
+
+Click the JSON tab and paste the following JSON, replacing what’s there: https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/template3.jscsrc Click review policy. 
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/review_policy_2.png)
+
+Give the policy a name and description and click create policy.
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/deny_1.png)
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/deny2.png)
+
+Click on groups in the left menu, go in the Endusers group, click on the permissions tab, click on attach policy.
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/Attach_4.png)
+
+Search for the policy, check the box next to it and click attach policy. Make sure the group had the AWSServiceCatalogEndUserFullAccess policy as well.
 
