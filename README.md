@@ -157,3 +157,30 @@ Click on groups in the left menu, go in the Endusers group, click on the permiss
 
 Search for the policy, check the box next to it and click attach policy. Make sure the group had the AWSServiceCatalogEndUserFullAccess policy as well.
 
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/Deny_Outside_AMI.png)
+
+Subscribe to AWS Marketplace AMI product you want to distribute. Navigate to the AWS Marketplace console, search for the product one wishes to use and click on it.
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/AMI1.png)
+
+Select continue to subscribe.
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/sub!.png)
+
+Click continue to configuration.
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/continue_to.png)
+
+Click continue to launch.
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/continue_to_launch.png)
+
+For the choose action, select copy to Service Catalog. Make sure the correct region is selected and click copy to Service Catalog. 
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/Config2.png)
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/copy.png)
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/copied.png)
+
+
