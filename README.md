@@ -263,6 +263,18 @@ Navigate to AWS Config console, click get started. On step 1: settings, leave th
 
 Choose any rules one wants and click next then click create.
 
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/dash1.png)
+
+Navigate to IAM and create a group called HealthcareDeveloper and attach the policy AWSCodeCommitPowerUser and the AWSServiceCatalogEndUserFullAccess, this group will not be able to delete projects. Also Add users.
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/group%40.png)
+
+Navigate to the Service Catalog console, create a new portfolio. Go into the portfolio and click on upload new product.
+
+
+
+
+
 
 
 
