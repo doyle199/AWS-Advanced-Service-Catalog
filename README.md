@@ -194,3 +194,49 @@ Create a role, select, AWS service and Service Catalog, select the policy just c
 ![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/contraint3.png)
 
 Add the users group.
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/Endusers_2.png)
+
+Log in as the user and test deployment.
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/products_list.png)
+
+The parameters ask for more information with this setup.
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/params_2.png)
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/params_3.png)
+
+Create an approval flow for an AWS Service Catalog product launch using AWS Lambda, AWS CloudFormation, Amazon API Gateway, and AWS Service Catalog administrator. Download the following template: https://s3.amazonaws.com/service-catalog-approval-flow/v1/resources_for_approval_template.yaml. The template will create an SNS topic, SNS notification function, and approval function, API Gateway, API and IAM roles. Run the template in AWS CloudFormation, go through the steps, check the acknowledgement box and click create stack. Enter an email for notification. Click on the outputs tab and copy the Lambda ARN. 
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/stack_complete_2.png)
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/sub_con_1.png)
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/sub_con_1.png)
+
+•	Download the following template: https://s3.amazonaws.com/service-catalog-approval-flow/v1/sample_wordpress_for_approval_template.yaml. Open the template in an editor and past the Lambda ARN where it says “replace your lambda ARN” next to ServiceToken: on line 395.
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/yaml_1.png)
+
+Save the template. Run the template in CloudFormation, it has a wait condition for approval status.
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/details_1.png)
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/details_2.png)
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/wait_condition_1.png)
+
+The stack sent an approval notification to the email. Click the link to approve.
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/app_email.png)
+
+It will say successfully approved in the web browser. Then the stack resumes creation because the Lambda function sends a confirmation for WaitHandle to continue.
+
+
+
+
+
+
+
+
