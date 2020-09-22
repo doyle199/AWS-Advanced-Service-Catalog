@@ -1,0 +1,26 @@
+•	{
+	"Version": "2012-10-17",
+	"Statement": [{
+			"Sid": "DenyAWSMarketplaceWriteAccess",
+			"Effect": "Deny",
+			"Action": ["aws-marketplace:*"],
+			"Resource": "*"
+		},
+		{
+			"Sid": "DenyMarketplaceAMIAccess",
+			"Effect": "Deny",
+			"Action": ["ec2:RunInstances"],
+			"Resource": "arn:aws:ec2:*::image/ami-*",
+			"Condition": {
+				"ForAnyValue:StringNotEquals": {
+					"ec2:Owner": [
+						"amazon",
+						"self",
+						"898082745236",
+						"Update_Your_Account_ID_here"
+					]
+				}
+			}
+		}
+	]
+}
