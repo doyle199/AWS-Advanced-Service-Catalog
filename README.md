@@ -183,4 +183,14 @@ For the choose action, select copy to Service Catalog. Make sure the correct reg
 
 ![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/copied.png)
 
+Create a portfolio like before or use an existing to distribute the product to one’s users. In the portfolio add the service to the portfolio.
 
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/portfolio2.png)
+
+In IAM, Create a policy for a launch constraint with the following JSON like before: https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/template4.jscsrc
+
+Create a role, select, AWS service and Service Catalog, select the policy just created continue through as before.	In Service Catalog, click on the portfolio, click on the constraints tab and click on create constraint and add the new policy like before.
+
+![alt text](https://github.com/doyle199/AWS-Advanced-Service-Catalog/blob/master/contraint3.png)
+
+Add the users group.
